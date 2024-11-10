@@ -4,7 +4,7 @@ void main() {
   runApp(
     MaterialApp(
       // disables debug mode banner on app
-      debugShowCheckedModeBanner: false ,
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: const Center(
@@ -17,7 +17,10 @@ void main() {
           ),
           backgroundColor: Colors.blueGrey[900],
         ),
-        backgroundColor: Colors.yellow,
+        body: Center(
+          child: Image.asset('images/diamond.png'),
+        ),
+        backgroundColor: Colors.blueGrey,
       ),
     ),
   );
